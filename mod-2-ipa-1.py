@@ -38,7 +38,7 @@ def savings(gross_pay, tax_rate, expenses):
     y = tax_rate
     z = expenses
     import math
-    return (math.floor(x + ( y * x )) - z)
+    return (math.floor(x - ( y * x )) - z)
 
 def material_waste(total_material, material_units, num_jobs, job_consumption):
     '''Material Waste.
