@@ -78,8 +78,7 @@ def material_waste(total_material, material_units, num_jobs, job_consumption):
     x = material_units
     y = num_jobs
     z = job_consumption
-    s = w-(y*z)
-    return (s+x)
+    return str(w - (y * z)) + x
 
 def interest(principal, rate, periods):
     '''Interest.
@@ -114,7 +113,8 @@ def interest(principal, rate, periods):
     y = rate
     z = periods
     
-    return (( x * ( z * y )) + x)
+    import math
+    return (math.floor(( x * ( z * y )) + x))
 
 def body_mass_index(weight, height):
     '''Body Mass Index.
@@ -151,4 +151,4 @@ def body_mass_index(weight, height):
     y = height [0]
     z = height [1]
     
-    return (x/(((y*0.3048)+(z*0.0254))**2))
+    return ((x/2.205)/(((y/3.281)+(z/39.37))**2))
