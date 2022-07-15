@@ -157,6 +157,15 @@ board8 = [
             ['O','X','O','O','X']
             ]
 
+board9 = [
+            ['X','X','X','X','X','X'],
+            ['O','X','O','O','O','X'],
+            ['X','O','X','X','X','O'],
+            ['O','X','O','X','O','O'],
+            ['O','X','O','O','X','X']
+            ]
+
+
 def tic_tac_toe(board):
     '''Tic Tac Toe. 
     25 points.
